@@ -1,0 +1,34 @@
+Guia de Instalação da linguagem para linux:
+http://fsharp.org/use/linux/
+(utilizada opção 1:  F# Debian/Ubuntu packages)
+
+Guia para desenvolvimento da linguagem em linux:
+http://fsharp.org/guides/mac-linux-cross-platform/
+(a parte Command Line Tools é extremamente útil)
+
+Referência Rápida da linguagem:
+http://dungpa.github.io/fsharp-cheatsheet/
+(Excelente para aprender as estruturas básicas em poucos minutos)
+
+Tutorial interativo de F#:
+http://www.tryfsharp.org/Learn/getting-started
+(Não tive paciência pra fazer ele todo, mas já deu pra pegar as idéias principais)
+
+
+Aprendendo Sockets:
+https://en.wikipedia.org/wiki/Network_socket
+http://www.linuxhowtos.org/C_C++/socket.htm
+http://www.tutorialspoint.com/unix_sockets/what_is_socket.htm
+(Apenas para ter conhecimento de como implementar um Socket)
+
+
+Códigos de exemplo:
+
+https://gist.github.com/panesofglass/765088
+(Exemplo de um Servidor com socket em F# - Utilizei parte do código como base para ambas as partes)port
+
+http://zguide.zeromq.org/fsx:asyncsrv
+(Exemplo de comunicação entre cliente e servidor)
+
+https://social.msdn.microsoft.com/Forums/vstudio/en-US/0378c5eb-1588-4102-9afa-4bde8d9cc2c1/f-read-data-from-tcp-socket-stream?forum=fsharpgeneral
+(Thread de fórum onde resolvi o problema da quantidade de bits exceder o tamanho da transferência)
