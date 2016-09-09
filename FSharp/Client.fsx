@@ -13,7 +13,8 @@ match fsi.CommandLineArgs with
     | [| scriptName; filepath; hostname |] ->
         try
             let port = 8593
-            let ipAddress = Dns.GetHostEntry(hostname).AddressList.[0]
+            //let ipAddress = Dns.GetHostEntry(hostname).AddressList.[0]
+            let ipAddress = IPAddress.Parse(hostname)
             let endpoint = IPEndPoint(ipAddress, port)
             let cts = new CancellationTokenSource()
             let socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp)
@@ -44,4 +45,4 @@ match fsi.CommandLineArgs with
             printfn "File %s Transfered with success!" (Path.GetFileName(filepath))
         with e -> printfn "An error occurred: %s" e.Message
     | _ ->
-        printfn "USAGE: fsharpi Client.fsx (save_path) (port)"
+        printfn "USAGE: fsharpi Client.fsx file_path ipAddress"
